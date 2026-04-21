@@ -1,20 +1,16 @@
-
 #Init
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegressor
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, accuracy_score, r2_score
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
 
 
 
 df = pd.read_csv('gameandgrade.csv')
-df.head()
+print(df.head())
 
 
 #Prepare Data
